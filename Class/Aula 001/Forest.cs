@@ -4,26 +4,16 @@ namespace BasicClasses
 {
   class Forest
   {
-    public string name; 
-    public int trees;  
     public int age;
     public string biome;
-
-    public string Name
+    
+    public string Name { get; set; }
+    
+    public int Trees { get; set;}
+    
+    public string Biome
     {
-      get{return name;}
-      set{name = value;}
-        }
-        
-    public int Trees
-    {
-      get{ return trees; }
-      set{ trees = value; }
-    }  
-
-       public string Biome
-    {
-      get{ return biome; }
+      get { return biome; }
       set
       {
         if (value == "Tropical" ||
@@ -37,7 +27,7 @@ namespace BasicClasses
           biome = "Unknown";
         }
       }
-    }   
+    }
   }
 
 }
